@@ -1,0 +1,91 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Atritmatika</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<!-- 	
+        <div class="aritmatika">
+			<img src="image/11.png" alt="" class="profile">
+
+			<form action="" name="form">
+			<pre>
+				Bilangan 1:<i class="fa fa-user" aria-hidden="true"><input type="text" name="val1" placeholder="masukan nilai pertama"></i> operasi Aritmatika :<select name="hitung" id="operator">
+
+					<option name="+">+</option>
+					<option name="-">-</option>
+					<option name="/">/</option>
+					<option name="*">*</option>
+					<option name="%">%</option>
+
+				</select><br>
+
+				Bilangan 2:<i class="fa-lock" aria-hidden="true"><input type="text" name="val2" placeholder="masukan nilai kedua"></i> hasil       <input type="text" name="hasil" id="" placeholder="hasil">
+				<input type="button" value="Cetak" onclick=test()><br>
+
+				<a href="../looping/looping.html">Aritmatika Looping</a><br>
+				<a href="../login/login.html">Login</a>
+			</pre>
+				
+			</form>
+		</div>
+ -->
+		<div class="login">
+			<img src="image/10.jpg" alt="" class="profile">
+
+			<form action="" type="text" name="form">
+
+			<p>Nilai1:<input type="text" name="val1" placeholder="masukan nilai pertama"></p>
+			<p>Niali2:<input type="text" name="val2" placeholder="masukan nilai kedua"></p>
+
+			<p>Hasil:<input type="text" name="hasil" id="" placeholder="hasil"></p>
+
+			<input type="button" value="Cetak" onclick=test()>
+
+			<select name="hitung" id="operator">
+
+				<option name="+">+</option>
+				<option name="-">-</option>
+				<option name="/">/</option>
+				<option name="*">*</option>
+				<option name="%">%</option>
+
+			</select><br>
+			<a href="../looping/looping.html">Aritmatika Looping</a><br>
+			<a href="../login/login.html">Operator Login</a>
+		</form>
+
+		</div>
+		
+		<script language="javascript">
+			function test(){
+
+				var a = parseInt(form.val1.value);
+				var b = parseInt(form.val2.value);
+
+				var hitung = form.hitung.value;
+
+				var hasil;
+
+				if(hitung == "+"){
+					hasil = a+b;
+				}
+				else if(hitung == "-"){
+					hasil = a-b;
+				}
+				else if(hitung == "/"){
+					hasil = a/b;
+				}
+				else if(hitung == "*"){
+					hasil = a*b;
+				}
+				else if(hitung == "%"){
+					hasil = a%b;
+				}
+
+				form.hasil.value = hasil;
+			}
+		</script>
+	</body>
+</html>
